@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+      </head>
+<body>
+  <div id="testimonials">
+    </div>
+    <br>
+  <script type="text/javascript">
+    fetch (new Request ("http://localhost:8080"))
+    .then(response => response.json())
+    .then (json => {
+var html="";
+json.forEach(post =>html+=(post+"<br>"));
+$("#testimonials").html(html);
+    }
+  );
+
+  </script>
+</body>
+</html>
