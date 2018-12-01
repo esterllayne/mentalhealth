@@ -1,0 +1,85 @@
+html{}
+body{
+    background-color:
+    text-align: center;
+    padding:0px;
+  }
+p{
+  background-position: center;
+  background-color:;
+  padding: 0px
+}
+  .homepageName{
+    font-size: 50px;
+    font-family: 'Delius Unicase', cursive;
+    background-color:;
+}
+.main{
+  padding: 15%;
+}
+.content_list
+{
+  list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+#rig{
+
+}
+.footer{
+  display: block;
+  background-position: center;
+  background-color: #333;
+  position:fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+/* Style the links inside the navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-decoration: none;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav a:hover {
+  background-color: #FFFF66;
+  color: black;
+}
+.topnav a.active {
+  background-color: #FFD700;
+  color: white;
+}
+
+
+  .fa {
+  padding: 20px;
+  font-size: 50px;
+  width: 40px;
+  text-align:center;
+  text-decoration: none;
+}
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-instagram {
+
+  color: white;
+}
+.fa-twitter {
+
+  color: white;
+}
+.fa-facebook {
+
+  color: white;
+}
