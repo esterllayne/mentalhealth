@@ -7,7 +7,7 @@
   <link href="css/index.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
-  <meta name="viewport" content="width=device-width, initial-scaled=1">
+  <meta name="viewport" content="width=device-width, initial-scaled=1.0">
     <script
   src="https://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -36,8 +36,9 @@
 
           </ul>
         </div>
-        </nav>
-      </div>
+    </div>
+    </nav>
+
 
 
     <!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,7 +54,6 @@
     </div>
   </nav> -->
 
-  <div>
     <div class="jumbotron">
         <div class"row" align="center">
             <div class="col-sm-12">
@@ -86,7 +86,7 @@
                      <a class="rig-cell" href="spiritual.html">
                          <img class="rig-img" src="images/spiritual_grid.jpg" />
                          <span class="rig-overlay"></span>
-                         <span class="rig-text">Spiritual & Wellbeing</span>
+                         <span class="rig-text">Spiritual</span>
                      </a>
                  </li>
                  <li>
@@ -100,27 +100,31 @@
 
              </ul>
             </center>
+          </div>
+        </div>
+      </div>
+      <div id="buzz" class="text-center">
 
-              <div id="buzz" class="text-center">
-
-            <dic class="container">
+            <div class="container">
                 <div class="row">
                   <div class="col-sm-12">
-                    <h2 class="about"> About Us</h2>
+                    <h2 id="about"> About Us</h2>
                   <blockquote>
                   <p>In my Feelings is a safe online platform giving some cool mental health tips as well as the opportunity to share your mental health story.<br>
-                    We cover overall mental health well-being in these categories, which allow you to live a balanced life.<br>
+                    We cover overall mental health well-being in the categories above
+                    <br>
+                    Click on any one of the categories for some practical advice in that area!
                     </p>
                 </blockquote>
 
                 </div>
-                </div>
+              </div>
                 <br>
                 <br>
                 <div class="row">
                 <div class="col-sm-12">
 
-                  <h2 class="whoarewe">Who are We</h2>
+                  <h2 id="whoarewe">Who are We</h2>
                   <blockquote>
                   <p>We are Sabiha and Ester and we created this website from scratch when we met at the CodeFirst: Girls course.<br>
                  We both have a passion for mental health and after experiencing our own journeys within seeking help we decided that
@@ -136,33 +140,27 @@
                 <br>
                 <br>
                 <div class="row">
-                <div class="col-sm-12">
-                  <h2 class="contact">Contact Us</h2>
-                  <p>Do you have any questions?<br>
-                     Please do not hesitate to contact us directly.<br> Our team will come back to you within a matter of hours to help you.</p>
-                  <form id="contact-form" name="contact-form" action="https://formspree.io/sabiha.sabur@gmail.com" method="POST" align="center">
-
-                      <div class="your_email">
-
-                        <div class="row">
-
-                            <!--Grid column-->
-                            <div class="col-md-9 mb-md-0 mb-5">
+                  <div class="col-sm-12">
+                    <h2 id="contact">Contact Us</h2>
+                    <p>Do you have any questions?<br>
+                       Please do not hesitate to contact us directly.<br> Our team will come back to you within a matter of hours to help you.</p>
+                    <!-- <form id="contact-form" name="contact-form" action="https://formspree.io/sabiha.sabur@gmail.com" method="POST" align="center"> -->
+                  </div>
+                </div>
+                <div class="row form-row your_email">
+                  <div class="row">
+                      <!--Grid column-->
+                            <div class="col-md-9">
                                 <form id="contact-form" name="contact-form" action="https://formspree.io/sabiha.sabur@gmail.com" method="POST">
-
-                                    <!--Grid row-->
-                                    <div class="row">
-
-
-                                        <div class="col-md-12">
-                                            <div class="md-form mb-0">
+                                            <!-- <div class="md-form mb-0"> -->
                                                 <input type="text" id="email" name="email" class="form-control">
                                                 <label for="email" class="">Your email</label>
-                                            </div>
-                                        </div>
+                                            <!-- </div> -->
+                                </form>
+                            </div>
                                         <!--Grid column-->
 
-                                    </div>
+                  </div>
                                     <!--Grid row-->
 
 
@@ -171,7 +169,7 @@
                                     <div class="row">
 
                                         <!--Grid column-->
-                                        <div class="col-md-12">
+                                        <div class="col-md-9">
 
                                             <div class="md-form">
                                                 <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
@@ -181,9 +179,6 @@
                                         </div>
                                     </div>
                                     <!--Grid row-->
-
-                                </form>
-
                                 <div class="text-center text-md-left">
                                     <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
                                 </div>
@@ -192,8 +187,7 @@
 
 
                     </div>
-                </div>
-                </div>
+            </div>
 
                 <div class="footer">
                   <div>

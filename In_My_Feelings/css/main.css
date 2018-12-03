@@ -1,6 +1,6 @@
 body{
   font-family: 'Patrick Hand SC', cursive;
-  font-size: 
+  font-size:
 }
 .nav li {
   display: inline-block;
@@ -161,6 +161,7 @@ transform: translateY(-50%);
 top: 50%; */
 font-size: 5vw;
 text-transform: uppercase;
+color:white;
 }
 
 /*<!-- Ester Added>*/
@@ -168,9 +169,9 @@ text-transform: uppercase;
     display: block;
     background-position: center;
     background-color: #333;
-    position: fixed;
-    left: 0;
-    bottom: 0;
+    /* position: fixed; */
+    /* left: 0; */
+    /* bottom: 0; */
     width: 100%;
     color: white;
     text-align: center;
@@ -211,5 +212,9 @@ p{
   display:inline-block;
   padding:10px;
   border-radius:15px;
+}
+
+.form-row {
+  margin-left: 20%;
 }
 /*<!--END Ester Added>*/
