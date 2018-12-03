@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Physical</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <meta name="viewport" content="width=device-width, initial-scaled=1">
+
+
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="js/bootstrap.min.js"></script>
+</script>
+<style >
+  #ResultA{
+    display:none;
+  }
+  #ResultB{
+    display:none;
+  }
+  #ResultC{
+    display:none;
+  }
+
+  ul {
+  list-style-type: none;
+}
+
+.container-quiz{
+  background-image: "images/quiz.jpg";
+   width: 1400px;
+   height: 1080px;
+   border: 15px solid black;
+   padding: 100px;
+   margin: 25px;
+   font-size: 1.5vw;
+
+   /* url(../images/fruits.jpg); */
+
+}
+</style>
+
+</head>
+<script type="text/javascript">
+  function calculateScore ()
+  {
+console.log ($("[name=company]").val())
+var A=0;
+var B=0;
+var C=0;
+["company","intensity","location","music","time","goal"].forEach (name=>{
+  $("[name="+name+"]").val()
+  var value= $("[name="+name+"]").val()
+  if (value=="A"){
+    A=A+1
+
+  }
+  if (value=="B"){
+    B=B+1
+  }
+  if (value=="C"){
+    C=C+1
+  }
+
+})
+
+if(A>=B && A>=C)
+{
+$("#ResultA").css("display","block")
+}
+if(B>=A && B>=C)
+{
+$("#ResultB").css("display","block")
+}
+if(C>=A && C>=B)
+{
+$("#ResultC").css("display","block")
+}
+
+  }
+</script>
+<body>
+  <nav class="navbar navbar-inverse navbar-fixed top" role="navigation">
+  <div class="container">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=."navbarcollapse">
+      <span class="sr-only">Toggle navigation</span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+ <span class="icon-bar"></span>
+</button>
+<a class="navbar-brand" href="#">In My Feelings</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="psychological.html">Psychological</a></li>
+            <li><a href="#">Physical</a></li>
+            <li><a href="nutrition.html">Nutrition</a></li>
+            <li><a href="personal.html">Personal</a></li>
+            <li><a href="spiritual.html">Spiritual & Wellbeing</a></li>
+
+          </ul>
+        </div>
+        </nav>
+      </div>
+
+
+
+  <div class="container">
+  <div class='jumbotron'>
+    <div class"row">
+<div class="col-sm-8">
+        <h1>Physical</h1>
+        <h3>Physical activity is very beneficial for your mental health, but most of the time it is viewed as something we “have to do” or “should do” instead of being something beneficial and positive to our wellbeing<h3>
+<h2> Find out what exercise suits you with this quiz!</h2>
+</div>
+
+<!-- <div class="col-sm-4">
+        <img class="img-responsive" src='images/sandwich.png'> -->
+</div>
+</div>
+    <form role='form' class="form-inline">
+    </div>
+    </form>
+  </div>
+</div>
+
+  <div id="Quiz" class="text-center">
+
+
+<div background-image="images/quiz.jpg" class="container-quiz">
+  <h1> Let's get Physical quiz!</h1>
+  Would you rather workout alone or with others?
+      <ul>
+      <li id ="option A"> <input type= "radio" name="company" value="A">Alone  </li>
+      <li id ="option B">  <input type= "radio" name="company" value="B">With others </li>
+      <li id ="option C">  <input type= "radio" name="company" value="C">I don’t mind </li>
+      </ul>
+
+        Do you like high or low intensity sports?
+        <ul>
+        <li id ="option C"><input type= "radio" name="intensity" value="C">High intensity </li>
+        <li id ="option A"><input type= "radio" name="intensity" value="A">Low intensity </li>
+        <li id ="option B"><input type= "radio" name="intensity" value="B">Moderate </li>
+        </ul>
+
+        Where would you rather workout?
+        <ul>
+        <li id ="option A"><input type= "radio" name="location" value="A">Indoor (at the comfort of your own house) </li>
+        <li id ="option C"><input type= "radio" name="location" value="C">Indoor (at your local gym) </li>
+        <li id ="option B"><input type= "radio" name="location" value="B">Outdoors </li>
+        </ul>
+
+        Which type of music is most appealing to you?
+        <ul>
+        <li id ="option B"><input type= "radio" name="music" value="B">Upbeat & happy music </li>
+        <li id ="option A"><input type= "radio" name="music" value="A">Calm & relaxing music </li>
+        <li id ="option C"><input type= "radio" name="music" value="C">Eletronic music </li>
+        </ul>
+
+        How much time are you willing to spend on your workout?
+        <ul>
+        <li id ="option C"><input type= "radio" name="time" value="C">No more than 30 minutes </li>
+        <li id ="option A"><input type= "radio" name="time" value="A">Between 30 and 45minutes </li>
+        <li id ="option B"><input type= "radio" name="time" value="B">Up to 1 hour or over. </li>
+        </ul>
+
+        And finally, what do you want most of your work out?
+        <ul>
+        <li id ="option A"><input type= "radio" name="goal" value="A">  I want to have some alone time </li>
+        <li id ="option B"><input type= "radio" name="goal" value="B">  I want to have some fun </li>
+        <li id ="option C"><input type= "radio" name="goal" value="C">  I want to sweat </li>
+        </ul>
+
+        <input type= "button" value="Submit" onclick="calculateScore()">
+
+
+  <p id= "ResultA">
+
+        The most suitable exercises for you would be yoga, skipping or even dancing,
+         these workouts are very easy to follow through a tutorial and can easily be done
+          at home or you can book a class at your near gym.<br>
+  </p>
+  <p id= "ResultB">
+
+        What we would suggest for you is a sport that you can play with others like
+        basketball, dodgeball, if you are feeling a little bit more adventurous, why
+        not invite your friends to your local park for a run or even a hike?!<br>
+  </p>
+  <p id= "ResultC">
+
+        The ideal type of sport for you would be something to get your blood flowing,
+         our suggestions are maybe a CrossFit class, a cardio session at your local gym
+         or even a session of HIIT (high-intensity interval training).<br>
+  </p>
+
+
+
+
+
+<div class="footer">
+  <div>
+  <a href="https://www.instagram.com/in_my_feelings_project/" class="fa fa-instagram"></a>
+  <a href="https://www.facebook.com/In-My-Feelings-254804008521425/?modal=composer" class="fa fa-facebook"></a>
+  <a href="https://twitter.com/InMyFee01436159" class="fa fa-twitter"></a>
+  </div>
+</div>
+
+
+</body>
+
+
+<!-- Sandwich from: © Kosoff | <a href="http://www.dreamstime.com/">Dreamstime Stock Photos</a> & <a href="http://www.stockfreeimages.com/">Stock Free Images</a> -->
+</html>
